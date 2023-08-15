@@ -10,7 +10,7 @@ function App() {
     lat: 33.7701, // Default to Long Beach, CA
     lng: -118.1937
   });
-
+   
   // Effect hook to fetch user's geolocation
   useEffect(() => {
     // Check if geolocation is available in the browser
