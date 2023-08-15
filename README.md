@@ -43,16 +43,15 @@ Find your perfect match! Swipe left or right to browse through profiles of dogs 
 
 ## List of Backend Endpoints
 
-| ROUTE NAME | ENDPOINT | METHOD | PURPOSE |
-|------------|----------|--------|---------|
-| Index | /dog | GET | Display list dog matches |
-| Create | /user/signup | POST |  Creates a profile for the user |
-| Create | /dog/signup | POST |  Creates a profile for user's dog |
-| Update/Edit | /user/edit | PUT | Update/Edit dog's info |
-| Update/Edit | /dog/edit | PUT | Update/Edit dog's info |
-| Show | /dog/:id | GET | Display's card stack of potential dogs to match with |
-| Destroy | /user/delete | DELETE | Deletes user |
-| Destroy | /dog/delete | DELETE | Deletes dog |
+| ROUTE NAME     | ENDPOINT      | METHOD | PURPOSE                                             |
+|----------------|---------------|--------|-----------------------------------------------------|
+| Index Users    | /dogs       | GET    | Display all users (might need change)               |
+| Show Dog       | /dogs/:id   | GET    | Display info about a specific dog                   |
+| Create Dog     | /dogs       | POST   | Creates a profile for a dog                         |
+| Update/Edit Dog| /dogs/:id   | PUT    | Update/Edit dog's info                              |
+| Destroy Dog    | /dogs/:id   | DELETE | Deletes dog                                         |
+
+
    
 ## ERD (ENTITY RELATIONSHIP DIAGRAM)
 ``` mermaid
