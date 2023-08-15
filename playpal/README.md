@@ -1,70 +1,94 @@
-# Getting Started with Create React App
+# PlayPal
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- **Contributors:** Yuna Pahk, Isaac Asher, Haleh Bozorgnia, and Nyijia Morgan
+- [**Backend**](https://github.com/yunapahk/Group-Project/tree/main/backend)
+- [**Deployed Site**](https://bookmarkd-504g.onrender.com)
+- **Languages, Database, and Frameworks Used:** React, Express, Node, MongoDB, SASS, EJS, JSX, Javascript
+- [**Trello**](https://trello.com/b/dVAobCJu/bookmarkd)
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+PlayPal takes the guesswork out of planning playdates for your canine companions. With intuitive matching based on your dog's unique characteristics and needs, PlayPal creates a community of like-minded dog lovers. By connecting dog owners with each other and valuable local resources, PawMate makes it simple to plan, locate, and enjoy fun and safe playdates.
 
-### `npm start`
+Whether you're a proud puppy parent seeking socialization opportunities or an experienced dog owner looking for new friends for your loyal companion, PlayPal is your go-to app for everything dog-related. Connect, play, and enjoy with PlayPal, your dog's new best friend is just a swipe away.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Join the PlayPal community today and make every play date a tail-wagging success!
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features 🐕
+Find your perfect match! Swipe left or right to browse through profiles of dogs near you. Match with those that suit your dog's breed, energy level, and play preferences.
 
-### `npm test`
+- Location-Aware Matching: PlayPal considers proximity to local dog parks in matching, ensuring that your playdates are not only compatible but conveniently located.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Real-Time Dog Park Popularity: Wondering how crowded the local dog park is? PlayPal provides live updates on the number of people at nearby parks, so you can pick the perfect time for a visit.
 
-### `npm run build`
+- Closest Dog Park Locator: Don't know where the nearest dog park is? PlayPal's integrated map feature will guide you to the closest dog-friendly locations.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- In-App Chat: Found a match? Chat with other dog owners within the app to coordinate playdates, discuss your dogs' preferences, and more.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- User Profiles: Create detailed profiles for your dogs, including breed, age, energy level, and more, to ensure a perfect match.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Mock UP of UI
+***Authn Page***
 
-### `npm run eject`
+![Home/Landing Page](https://i.imgur.com/CECdVn7.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+***Match Page***
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![Create Page](https://i.imgur.com/2Mfskdl.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+***Dog Park Page***
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![Update Page](https://i.imgur.com/BeMJcz2.png)
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## List of Backend Endpoints
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+| ROUTE NAME | ENDPOINT | METHOD | PURPOSE |
+|------------|----------|--------|---------|
+| Index | /dog | GET | Display list dog matches |
+| Create | /user/signup | POST |  Creates a profile for the user |
+| Create | /dog/signup | POST |  Creates a profile for user's dog |
+| Update/Edit | /user/edit | PUT | Update/Edit dog's info |
+| Update/Edit | /dog/edit | PUT | Update/Edit dog's info |
+| Show | /dog/:id | GET | Display's card stack of potential dogs to match with |
+| Destroy | /user/delete | DELETE | Deletes user |
+| Destroy | /dog/delete | DELETE | Deletes dog |
+   
+## ERD (ENTITY RELATIONSHIP DIAGRAM)
+``` mermaid
+erDiagram
+    USER ||--o{ DOG_PROFILE : "HAS"
+    USER ||--o{ MATCH : "FINDS_MATCHES"
+    MATCH ||--o{ USER : "MATCHED_TO"
+    USER ||--o{ DOG_PARK : "VIEWS"
+    
+    USER {
+        int id
+        string username
+        string password
+        string email
+        bool isActive
+    }
+    
+    DOG_PROFILE {
+        int id
+        string name
+        string breed
+        number age
+    }
+    
+    DOG_PARK {
+        int id
+        string name
+        number location
+    }
+    
+    MATCH {
+        int id
+        int userId
+        int matchUserId
+    }
+```
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
