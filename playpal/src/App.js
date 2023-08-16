@@ -33,9 +33,7 @@ function App() {
 
   return (
     <div className="App">
-      {/* Load Google Maps Script */}
       <LoadScript googleMapsApiKey="AIzaSyB74jeDjVpazGYRaOP7ye40cOwotgox3DU">
-        {/* Google Map component */}
         <GoogleMap
           center={location} // Set the center of the map to the current location
           zoom={10}
