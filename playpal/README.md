@@ -1,10 +1,10 @@
 # PlayPal
 
 - **Contributors:** Yuna Pahk, Isaac Asher, Haleh Bozorgnia, and Nyijia Morgan
-- [**Backend**](https://github.com/yunapahk/Group-Project/tree/main/backend)
+- [**Backend**](https://github.com/yunapahk/playpal-backend)
 - [**Deployed Site**](https://bookmarkd-504g.onrender.com)
 - **Languages, Database, and Frameworks Used:** React, Express, Node, MongoDB, SASS, EJS, JSX, Javascript
-- [**Trello**](https://trello.com/b/dVAobCJu/bookmarkd)
+- [**Trello**](https://trello.com/b/6PwBedlF/playpal)
 
 ## Description
 
@@ -28,7 +28,11 @@ Find your perfect match! Swipe left or right to browse through profiles of dogs 
 - User Profiles: Create detailed profiles for your dogs, including breed, age, energy level, and more, to ensure a perfect match.
 
 ## Mock UP of UI
+<<<<<<< HEAD
 ***Authn Page***
+=======
+***Auth Page***
+>>>>>>> 051dd3e (removing submodule folders test)
 
 ![Home/Landing Page](https://i.imgur.com/CECdVn7.png)
 
@@ -90,5 +94,9 @@ erDiagram
     }
 ```
 
+<<<<<<< HEAD
 
 
+=======
+### Deployed Site Screenshots
+>>>>>>> 051dd3e (removing submodule folders test)
