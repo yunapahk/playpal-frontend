@@ -35,7 +35,7 @@ Find your perfect match! Swipe left or right to browse through profiles of dogs 
 
 ***Dashboard Page***
 
-![Index/Show](https://i.imgur.com/kdCzQUT.png)
+![Index/Show](https://i.imgur.com/Gbk5a86.png)
 
 ***Dog Park Page***
 
