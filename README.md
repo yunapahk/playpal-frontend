@@ -31,7 +31,7 @@ Find your perfect match! Swipe left or right to browse through profiles of dogs 
 ***Auth Page***
 
 ![Signup/Login](https://i.imgur.com/KdJYz4E.png)
-![Signup/Login](https://i.imgur.com/sofDPk7.png)
+![Signup/Login](https://i.imgur.com/U56xPOG.png)
 
 ***Dashboard Page***
 
