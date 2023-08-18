@@ -30,28 +30,25 @@ Find your perfect match! Swipe left or right to browse through profiles of dogs 
 ## Mock UP of UI
 ***Auth Page***
 
-![Home/Landing Page](https://i.imgur.com/CECdVn7.png)
+![Home/Landing Page](https://i.imgur.com/KdJYz4E.png)
 
-***Match Page***
+***Dashboard Page***
 
-![Create Page](https://i.imgur.com/2Mfskdl.png)
+![Create Page](https://i.imgur.com/mGqbpoS.png)
 
 ***Dog Park Page***
 
-![Update Page](https://i.imgur.com/BeMJcz2.png)
+(https://i.imgur.com/G3TAKhr.png)
 
+***Messaging Page***
 
-## List of Backend Endpoints
+![Socket.io](https://i.imgur.com/XqMBEYW.png)
 
-| ROUTE NAME     | ENDPOINT      | METHOD | PURPOSE                                             |
-|----------------|---------------|--------|-----------------------------------------------------|
-| Index Users    | /dogs       | GET    | Display all users (might need change)               |
-| Show Dog       | /dogs/:id   | GET    | Display info about a specific dog                   |
-| Create Dog     | /dogs       | POST   | Creates a profile for a dog                         |
-| Update/Edit Dog| /dogs/:id   | PUT    | Update/Edit dog's info                              |
-| Destroy Dog    | /dogs/:id   | DELETE | Deletes dog                                         |
+## Endpoints
+(https://i.imgur.com/JQLyZZD.png)
 
-
+## Schemas
+(https://i.imgur.com/7jiqcJp.png)
    
 ## ERD (ENTITY RELATIONSHIP DIAGRAM)
 ``` mermaid
