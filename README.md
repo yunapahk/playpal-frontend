@@ -34,21 +34,21 @@ Find your perfect match! Swipe left or right to browse through profiles of dogs 
 
 ***Dashboard Page***
 
-![Create Page](https://i.imgur.com/mGqbpoS.png)
+![Index/Show](https://i.imgur.com/mGqbpoS.png)
 
 ***Dog Park Page***
 
-(https://i.imgur.com/G3TAKhr.png)
+![/dogpark Show page](https://i.imgur.com/G3TAKhr.png)
 
 ***Messaging Page***
 
 ![Socket.io](https://i.imgur.com/XqMBEYW.png)
 
 ## Endpoints
-(https://i.imgur.com/JQLyZZD.png)
+![All Endpoints](https://i.imgur.com/JQLyZZD.png)
 
 ## Schemas
-[!All Schemas](https://i.imgur.com/7jiqcJp.png)
+![All Schemas](https://i.imgur.com/7jiqcJp.png)
    
 ## ERD (ENTITY RELATIONSHIP DIAGRAM)
 ``` mermaid
