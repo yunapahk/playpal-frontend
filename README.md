@@ -48,7 +48,7 @@ Find your perfect match! Swipe left or right to browse through profiles of dogs 
 (https://i.imgur.com/JQLyZZD.png)
 
 ## Schemas
-(https://i.imgur.com/7jiqcJp.png)
+[!All Schemas](https://i.imgur.com/7jiqcJp.png)
    
 ## ERD (ENTITY RELATIONSHIP DIAGRAM)
 ``` mermaid
