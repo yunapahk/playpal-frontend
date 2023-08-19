@@ -13,7 +13,7 @@ PlayPal takes the guesswork out of planning playdates for your canine companions
 Whether you're a proud puppy parent seeking socialization opportunities or an experienced dog owner looking for new friends for your loyal companion, PlayPal is your go-to app for everything dog-related. Connect, play, and enjoy with PlayPal, your dog's new best friend is just a swipe away.
 
 Join the PlayPal community today and make every play date a tail-wagging success!
-
+ 
 ## Features 🐕
 Find your perfect match! Swipe left or right to browse through profiles of dogs near you. Match with those that suit your dog's breed, energy level, and play preferences.
 
