@@ -1,47 +1,30 @@
-import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import React from "react";
+import { useLoaderData, Form } from "react-router-dom";
 
-const ShowUser = () => {
-    const { userId } = useParams(); // Get user ID from URL
-    const [user, setUser] = useState(null);
-    const [loading, setLoading] = useState(true);
-  
-    // Function to fetch user details by ID
-    const fetchUser = async () => {
-      try {
-        // Replace with the appropriate API endpoint to fetch user details
-        const response = await fetch(`/api/users/${userId}`);
-        const data = await response.json();
-        setUser(data);
-        setLoading(false);
-      } catch (error) {
-        console.error('Failed to fetch user:', error);
-        setLoading(false);
-      }
-    };
-  
-    // Fetch user details when the component mounts
-    useEffect(() => {
-      fetchUser();
-    }, [userId]);
-  
-    if (loading) {
-      return <div>Loading...</div>;
-    }
-  
-    if (!user) {
-      return <div>User not found</div>;
-    }
-  
-    // Render user details
-    return (
-      <div>
-        <h1>{user.username}</h1>
-        <p>Email: {user.email}</p>
-        {/* You can add more details here based on the user schema */}
-      </div>
-    );
-  };
-  
-  export default ShowUser;
-  
+function Show(props) {
+  const dog = useLoaderData();
+
+  return (
+    <div className="dog">
+      <h1>{dog.name}</h1>
+      <h2>{dog.breed}</h2>
+      <img src={dog.image} alt={dog.name} />
+
+      <h2>Update {dog.name}</h2>
+      <Form action={`/update/${dog._id}`} method="POST">
+        <input type="text" name="name" placeholder="dog's name" defaultValue={dog.name} />
+        <input type="text" name="breed" placeholder="dog's breed" defaultValue={dog.breed} />
+        <input type="number" name="age" placeholder="dog's age" defaultValue={dog.age} />
+        <input type="text" name="image" placeholder="dog's image" defaultValue={dog.image} />
+        <input type="text" name="size" placeholder="dog's size" defaultValue={dog.size} />
+        <input type="text" name="activityLevel" placeholder="dog's activity level" defaultValue={dog.activityLevel} />
+        <input type="submit" value={`Update ${dog.name}`} />
+      </Form>
+      <Form action={`/delete/${dog._id}`} method="POST">
+        <button type="submit">{`Delete ${dog.name}`}</button>
+      </Form>
+    </div>
+  );
+}
+
+export default Show;
