@@ -1,12 +1,15 @@
 import { Outlet } from "react-router-dom";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
+import SwipeCards from "./components/SwipeCards";
 
 function App() {
   return (
     <div className="App">
-      <h1>Playpal</h1>
       <Header />
       <Outlet />
+      <SwipeCards />
+      <Footer />
     </div>
   );
 }

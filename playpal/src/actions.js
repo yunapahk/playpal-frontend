@@ -24,7 +24,7 @@ export const createAction = async ({ request }) => {
   return redirect("/");
 };
 
-export const updateAction = async ({ request, params }) => {
+export const updateAction = async ({ params, request }) => {
   const formData = await request.formData();
 
   const updatedDog = {
