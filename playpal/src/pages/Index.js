@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, useLoaderData, Form } from "react-router-dom";
-import { Card, CardWrapper } from "react-swipeable-cards"; 
+// import { Card, CardWrapper } from "react-swipeable-cards"; 
 
 function Index(props) {
   // GET THE DATA FROM OUR LOADER
@@ -20,9 +20,9 @@ function Index(props) {
         <input className="form-button" type="submit" value="Add Pal" />
       </Form>
       </div>
-      <CardWrapper >
+      {/* <CardWrapper >
         {/* Swipeable card items */}
-        {dogs.map((dog, index) => (
+        {/* {dogs.map((dog, index) => (
           <Card
             key={dog._id}
             style={{
@@ -32,8 +32,8 @@ function Index(props) {
               flexDirection: "column",
               alignItems: "center",
               justifyContent: "center",
-              padding: "20px", // Adjust padding as needed
-              margin: "10px", // Adjust margin as needed
+              padding: "20px", 
+              margin: "10px", 
               color: "#fff",
               fontSize: "1.5rem",
             }}
@@ -64,9 +64,9 @@ function Index(props) {
           <img src={dog.image} alt={dog.name} />
           <h3>{dog.breed}</h3>
         </div>
-      ))}
+      ))} */}
     </div>
   );
-}
+} 
 
 export default Index;

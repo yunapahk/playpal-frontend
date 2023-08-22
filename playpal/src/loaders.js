@@ -1,21 +1,40 @@
 import { baseURL } from './base_url';
+import { redirect } from 'react-router-dom'
+
+const authCheck = () => {
+    const loggedIn = localStorage.getItem('loggedIn')
+    if(!loggedIn){
+        return false
+    }
+    return true
+}
 
 export const dogsLoader = async () => {
-    // make a call to backend index route
-    const response = await fetch(`${ baseURL }/dogs`)
-    // convert the response in a js object
+    if (!authCheck()){
+        return redirect('/login')
+    }
+    const response = await fetch(`${baseURL}/dogs`, {
+        credentials: 'include'
+    })
     const dogs = await response.json()
-    // return the dogs
     return dogs
 }
 
-export const dogLoader = async ({params}) => {
-    // get the id param from the params object
+export const dogLoader = async ({ params }) => {
+    if (!authCheck()){
+        return redirect('/login')
+    }
     const id = params.id
-    // make a call to backend show route
-    const response = await fetch(`${ baseURL }/dogs/${id}`)
-    // convert the response into a js object
+    const response = await fetch(`${baseURL}/dogs/${id}`,{
+        credentials: 'include'
+    })
     const dog = await response.json()
-    // return the dog
     return dog
+}
+
+export const mainLoader = async () => {
+    if (authCheck()){
+        return redirect('/dashboard')
+    }
+    return {}
 }
