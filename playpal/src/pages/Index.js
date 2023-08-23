@@ -1,9 +1,6 @@
 import React from "react";
 import "../styles.scss";
 import { Link, useLoaderData, Form } from "react-router-dom";
-import LikeButton from "../components/LikeButton";
-import DislikeButton from "../components/DislikeButton";
-import { Card, CardWrapper } from "react-swipeable-cards"; 
 
 function Index(props) {
   // GET THE DATA FROM OUR LOADER
@@ -23,7 +20,7 @@ function Index(props) {
         <input className="form-button" type="submit" value="Add Pal" />
       </Form>
       </div>
-      <CardWrapper >
+      {/* <CardWrapper >
          {dogs.map((dog, index) => (
           <Card
             key={dog._id}
@@ -61,7 +58,7 @@ function Index(props) {
         </div>
            </Card>
         ))}
-      </CardWrapper>
+      </CardWrapper> */}
     </div>
   );
 }
