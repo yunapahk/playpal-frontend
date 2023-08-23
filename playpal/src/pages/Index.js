@@ -20,45 +20,18 @@ function Index(props) {
         <input className="form-button" type="submit" value="Add Pal" />
       </Form>
       </div>
-      {/* <CardWrapper >
-         {dogs.map((dog, index) => (
-          <Card
-            key={dog._id}
-            style={{
-              backgroundColor: "#5FBF54",
-              boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.2)", // Add your box shadow here
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              justifyContent: "center",
-              padding: "20px", 
-              margin: "10px", 
-              color: "#fff",
-              fontSize: "1.5rem",
-            }}
-          >
-            <Link
-              to={`/${dog._id}`}
-              style={{ textDecoration: "none", color: "#fff" }}
-            >
+      {dogs.map((dog, index) => {
+        return (
+          <div key={dog._id} className="dog">
+            <Link to={`/${dog._id}`}>
               <h1>{dog.name}</h1>
             </Link>
-            <img
-              src={dog.image}
-              alt={dog.name}
-              style={{
-                maxWidth: "100%", // Set the maximum width of the image
-                height: "auto", // Allow the height to adjust automatically
-              }}
-            />
+            <img src={dog.image} alt={dog.name} />
             <h3>{dog.breed}</h3>
-       <div>
-            <LikeButton />
-            <DislikeButton />
-        </div>
-           </Card>
-        ))}
-      </CardWrapper> */}
+            <h3>{dog.age}</h3>
+          </div>
+        );
+      })}
     </div>
   );
 }
