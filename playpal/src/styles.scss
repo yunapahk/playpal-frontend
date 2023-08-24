@@ -1,6 +1,10 @@
 // ----------------------------
 // VARIABLES
 // ----------------------------
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 $maincolor: black;
 $contrastcolor: white;
 
@@ -23,10 +27,13 @@ nav {
   color: $contrastcolor; 
   display: flex;
   justify-content: flex-start;
+  margin: 0 auto;
+  height: 5vh;
 
   a {
     color: $contrastcolor; 
-    margin: 10px;
+    margin: 0 auto;
+    text-align: center;
     font-size: large;
   }
 }
@@ -121,9 +128,50 @@ h3,p{
     background-color: rgb(27,156,252,0.1);
     transform: scale(1.1);
 }
-a{
+
+a {
         text-transform: uppercase;
         color:#1B9CFC;
         text-decoration:none ;
         font-weight: bold;
 }
+
+// Main page signup and login buttons
+.main-container {
+  margin-top: 80px;
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.auth-buttons {
+  display: flex;
+}
+
+.auth-button {
+  margin: 0 10px;
+  text-align: center;
+}
+
+.auth-button button {
+  background-color: #2a9612;
+  color: whitesmoke;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.auth-button button:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
