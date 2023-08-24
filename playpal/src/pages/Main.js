@@ -19,7 +19,7 @@ const AuthForm = () => {
   return (
     <div className="wrapper">
       <div className="title-text">
-        <div className={`title login ${activeForm === 'login' ? 'active' : ''}`}>Welcome Back</div>
+        <div className={`title login ${activeForm === 'login' ? 'active' : ''}`}>Welcome</div>
         <div className={`title signup ${activeForm === 'signup' ? 'active' : ''}`}>Hey New Pal</div>
       </div>
       <div className="form-container">
