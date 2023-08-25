@@ -1,1 +1,1 @@
-export const baseURL = "http://localhost:4567"
+export const baseURL = "https://playpal-976f.onrender.com"
