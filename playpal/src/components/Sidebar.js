@@ -6,13 +6,13 @@ function Sidebar(props) {
   return (
     <div>
       <Menu className="menu">
-        <a className="menu-item" href="/">
+        <a className="menu-item" href="/dashboard">
           Home
         </a>
         <a className="menu-item" href="/">
           Settings
         </a>
-        <a className="menu-item" href="/pizzas">
+        <a className="menu-item" href="https://github.com/yunapahk/playpal-frontend">
           Github
         </a>
         <a className="menu-item" href="/">

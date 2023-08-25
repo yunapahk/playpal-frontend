@@ -10,7 +10,7 @@ html,body{
   height: 100%;
   width: 100%;
   place-items: center;
-  background-image: linear-gradient(62deg, #207938 0%, #497b50 100%);
+  background-image: whitesmoke;
 }
 ::selection{
   background: #1aff4f;
