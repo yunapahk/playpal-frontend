@@ -22,7 +22,7 @@ export const createAction = async ({ request }) => {
     body: JSON.stringify(newDog)
   });
 
-  return redirect("/");
+  return redirect("/dashboard");
 };
 
 export const updateAction = async ({ request, params }) => {
@@ -36,6 +36,7 @@ export const updateAction = async ({ request, params }) => {
     image: formData.get("image"),
     size: formData.get("size"),
     activityLevel: formData.get("activityLevel")
+   
   };
 
   await fetch(`${baseURL}/dogs/${id}`, {
@@ -57,7 +58,7 @@ export const deleteAction = async ({ params }) => {
     credentials: "include",
   });
 
-  return redirect("/");
+  return redirect("/dashboard");
 };
 
 
