@@ -100,6 +100,7 @@ input[type="radio"]{
 .form-container .form-inner{
   display: flex;
   width: 200%;
+  padding-right: 300px;
 }
 .form-container .form-inner form{
   width: 50%;
@@ -212,6 +213,7 @@ form{
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 20px;
   margin: 0 auto;
   border-radius: 10px;
@@ -237,4 +239,5 @@ input{
   width: 70%;
   height: 1.5rem;
 }
+
 
