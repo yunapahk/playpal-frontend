@@ -6,7 +6,7 @@
 - **Languages, Database, and Frameworks Used:** React, Express, Node, MongoDB, SASS, EJS, JSX, Javascript
 - [**Trello**](https://trello.com/b/6PwBedlF/playpal)
 
-## Description
+## Description  
 
 PlayPal takes the guesswork out of planning playdates for your canine companions. With intuitive matching based on your dog's unique characteristics and needs, PlayPal creates a community of like-minded dog lovers. By connecting dog owners with each other and valuable local resources, PlayPal makes it simple to plan, locate, and enjoy fun and safe playdates.
 
