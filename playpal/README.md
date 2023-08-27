@@ -1,14 +1,14 @@
-# PlayPal
+# PlayPal  
 
-- **Contributors:** Yuna Pahk, Isaac Asher, Haleh Bozorgnia, and Nyijia Morgan
-- [**Backend**](https://github.com/yunapahk/playpal-backend)
-- [**Deployed Site**](https://bookmarkd-504g.onrender.com)
+- **Contributors:** Yuna Pahk & Isaac Asher
+- [**Backend Render**](https://playpal-976f.onrender.com)
+- [**Deployed Site**](https://playpal-yunapahk.vercel.app/)
 - **Languages, Database, and Frameworks Used:** React, Express, Node, MongoDB, SASS, EJS, JSX, Javascript
 - [**Trello**](https://trello.com/b/6PwBedlF/playpal)
 
 ## Description
 
-PlayPal takes the guesswork out of planning playdates for your canine companions. With intuitive matching based on your dog's unique characteristics and needs, PlayPal creates a community of like-minded dog lovers. By connecting dog owners with each other and valuable local resources, PawMate makes it simple to plan, locate, and enjoy fun and safe playdates.
+PlayPal takes the guesswork out of planning playdates for your canine companions. With intuitive matching based on your dog's unique characteristics and needs, PlayPal creates a community of like-minded dog lovers. By connecting dog owners with each other and valuable local resources, PlayPal makes it simple to plan, locate, and enjoy fun and safe playdates.
 
 Whether you're a proud puppy parent seeking socialization opportunities or an experienced dog owner looking for new friends for your loyal companion, PlayPal is your go-to app for everything dog-related. Connect, play, and enjoy with PlayPal, your dog's new best friend is just a swipe away.
 
@@ -28,36 +28,33 @@ Find your perfect match! Swipe left or right to browse through profiles of dogs 
 - User Profiles: Create detailed profiles for your dogs, including breed, age, energy level, and more, to ensure a perfect match.
 
 ## Mock UP of UI
-<<<<<<< HEAD
-***Authn Page***
-=======
 ***Auth Page***
->>>>>>> 051dd3e (removing submodule folders test)
 
-![Home/Landing Page](https://i.imgur.com/CECdVn7.png)
+![Signup/Login](https://i.imgur.com/KdJYz4E.png)
+![Signup/Login](https://i.imgur.com/U56xPOG.png)
 
-***Match Page***
+***Dashboard Page***
 
-![Create Page](https://i.imgur.com/2Mfskdl.png)
+![Index/Show](https://i.imgur.com/Gbk5a86.png)
 
 ***Dog Park Page***
 
-![Update Page](https://i.imgur.com/BeMJcz2.png)
+![/dogpark Show page](https://i.imgur.com/G3TAKhr.png)
+
+***Messaging Page***
+
+![Socket.io](https://i.imgur.com/XqMBEYW.png)
+
+## Endpoints
+![All Endpoints](https://i.imgur.com/4gUcGVg.png)
 
 
-## List of Backend Endpoints
+## Schemas
+![Schema Models](https://i.imgur.com/jAq1RuC.png)
 
-| ROUTE NAME | ENDPOINT | METHOD | PURPOSE |
-|------------|----------|--------|---------|
-| Index | /dog | GET | Display list dog matches |
-| Create | /user/signup | POST |  Creates a profile for the user |
-| Create | /dog/signup | POST |  Creates a profile for user's dog |
-| Update/Edit | /user/edit | PUT | Update/Edit dog's info |
-| Update/Edit | /dog/edit | PUT | Update/Edit dog's info |
-| Show | /dog/:id | GET | Display's card stack of potential dogs to match with |
-| Destroy | /user/delete | DELETE | Deletes user |
-| Destroy | /dog/delete | DELETE | Deletes dog |
-   
+## Workflow
+![Workflow](https://i.imgur.com/0ZglNJ3.png)
+
 ## ERD (ENTITY RELATIONSHIP DIAGRAM)
 ``` mermaid
 erDiagram
@@ -92,11 +89,4 @@ erDiagram
         int userId
         int matchUserId
     }
-```
-
-<<<<<<< HEAD
-
-
-=======
-### Deployed Site Screenshots
->>>>>>> 051dd3e (removing submodule folders test)
+`
